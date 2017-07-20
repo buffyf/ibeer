@@ -36,10 +36,11 @@ img {
 }
 
 .wrapper {
-    width: 1000px;
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
     /*
         TODO: 
         - Center up the page
@@ -124,8 +125,7 @@ main {
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3);
     width: 500px;
-    position: static;
-    transform: translateX(-30%);
+    transform: translateX(-25%);
     transform: translateY(-2%);
     /* display: flex; */
     /* flex-direction: column; */
@@ -141,8 +141,8 @@ aside {
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3);
     width: 220px;
-    position: absolute;
-    transform: translate(240%);
+    transform: translateY(-2%);
+    /* position: absolute; */
     /*
         TODO: 
         - Flexbox: Set the starting width of this element
@@ -201,6 +201,10 @@ article img {
 
 article footer p {
     border-top: 1px solid #ccc;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1.5em;
+    font-size: .8em;
     /*
         TODO: 
         - Style the article footer
@@ -212,7 +216,6 @@ article footer p {
     background: #333;
     color: white;
     text-align: center;
-    padding: 2em;
     /*
         TODO: 
         - Style the site footer
